@@ -18,38 +18,35 @@ namespace WereldbouwerAPI.Controllers
         [HttpGet(Name = "GetWereldBouwer")]
         public IEnumerable<WereldBouwer> Get()
         {
-            return Enumerable.Range(1, 5).Select(index => new WereldBouwer("jeff")
-            {
-                maxLength = Random.Shared.Next(-20, 55),
-                maxHeight = Random.Shared.Next(1, 100)
-            })
-            .ToArray();
+            return _wereldBouwers;
         }
 
         [HttpPost(Name = "PostWereldBouwer")]
         public ActionResult<WereldBouwer> Post(WereldBouwer wereldBouwer)
         {
+            _wereldBouwer.Id = _nextId++;
             _wereldBouwers.Add(wereldBouwer);
-            return CreatedAtRoute("GetWereldBouwer", new { }, wereldBouwer);
+            return CreatedAtRoute("GetWereldBouwer", new { id = wereldBouwer.Id }, wereldBouwer);
         }
 
         [HttpPut(Name = "PutWereldBouwer")]
         public ActionResult<WereldBouwer> Put(WereldBouwer wereldBouwer)
         {
-            var existingWereldBouwer = _wereldBouwers.FirstOrDefault(wb => wb.name == wereldBouwer.name);
+            var existingWereldBouwer = _wereldBouwers.FirstOrDefault(wb => wb.Id == wereldBouwer.Id);
             if (existingWereldBouwer == null)
             {
                 return NotFound();
             }
+            existingWereldBouwer.name = wereldBouwer.name;
             existingWereldBouwer.maxLength = wereldBouwer.maxLength;
             existingWereldBouwer.maxHeight = wereldBouwer.maxHeight;
-            return CreatedAtRoute("GetWereldBouwer", new { }, existingWereldBouwer);
+            return CreatedAtRoute("GetWereldBouwer", new { id = existingWereldBouwer.Id }, existingWereldBouwer);
         }
 
         [HttpDelete(Name = "DeleteWereldBouwer")]
         public ActionResult Delete(string name)
         {
-            var existingWereldBouwer = _wereldBouwers.FirstOrDefault(wb => wb.name == name);
+            var existingWereldBouwer = _wereldBouwers.FirstOrDefault(wb => wb.Id == id);
             if (existingWereldBouwer == null)
             {
                 return NotFound();
