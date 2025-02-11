@@ -44,23 +44,6 @@ namespace WereldbouwerAPI.Controllers
             return CreatedAtRoute("GetWereldBouwer", new { id = existingWereldBouwer.id }, existingWereldBouwer);
         }
 
-        //[HttpDelete("{id}", Name = "DeleteWereldBouwer")]
-        //public IActionResult Delete(int id)
-        //{
-        //    var wereldBouwer = _wereldBouwers.FirstOrDefault(wb => wb.id == id);
-
-        //    if (wereldBouwer == null)
-        //    {
-        //        return NotFound();
-        //    }
-
-        //    _wereldBouwers.Remove(wereldBouwer); // Hier wordt de wereldBouwer verwijderd
-
-        //    // Bewaar de wijzigingen (afhankelijk van je databaseprovider)
-        //    // Bijvoorbeeld met Entity Framework:
-
-        //    return NoContent();
-        //}
 
         [HttpDelete("{id}", Name = "DeleteWereldBouwer")]
         public IActionResult Delete(int id)
