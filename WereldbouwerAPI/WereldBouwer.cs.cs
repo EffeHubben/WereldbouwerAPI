@@ -1,11 +1,15 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace WereldbouwerAPI
+namespace Wereldbouwer
 {
-    public class WereldBouwer
+    [Required]
+    public string name { get; set; }
+    public int maxLength { get; set; }
+    public int maxHeight { get; set; }
+
+    // Constructor to initialize the 'name' field
+    public WereldBouwer(string name)
     {
-        public string name;
-        public int maxLength;
-        public int maxHeight;
+        this.name = name;
     }
 }

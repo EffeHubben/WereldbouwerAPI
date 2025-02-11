@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace WereldbouwerAPI.Controllers
+namespace Wereldbouwer.Controllers
 {
     [ApiController]
     [Route("[controller]")]
@@ -18,11 +18,10 @@ namespace WereldbouwerAPI.Controllers
         [HttpGet(Name = "GetWereldBouwer")]
         public IEnumerable<WereldBouwer> Get()
         {
-            return Enumerable.Range(1, 5).Select(index => new WereldBouwer
+            return Enumerable.Range(1, 5).Select(index => new WereldBouwer("jeff")
             {
-                name = jeff,
                 maxLength = Random.Shared.Next(-20, 55),
-                maxHeight = Random.Shared.Next(1, 100) // Assuming Summaries is an array of integers
+                maxHeight = Random.Shared.Next(1, 100)
             })
             .ToArray();
         }
