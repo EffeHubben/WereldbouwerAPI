@@ -7,7 +7,6 @@ namespace WereldbouwerAPI.Controllers
     [Route("[controller]")]
     public class WereldBouwerController : ControllerBase
     {
-
         private static List<WereldBouwer> _wereldBouwers = new List<WereldBouwer>();
         private readonly ILogger<WereldBouwerController> _logger;
 
