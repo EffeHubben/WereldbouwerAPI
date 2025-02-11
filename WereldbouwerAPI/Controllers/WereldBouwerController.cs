@@ -1,12 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
+using WereldbouwerAPI;
 
-namespace Wereldbouwer.Controllers
+namespace WereldbouwerAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]
     public class WereldBouwerController : ControllerBase
     {
-
         private List<WereldBouwer> _wereldBouwers = new List<WereldBouwer>();
         private readonly ILogger<WereldBouwerController> _logger;
 
@@ -32,6 +32,5 @@ namespace Wereldbouwer.Controllers
             _wereldBouwers.Add(wereldBouwer);
             return CreatedAtRoute("GetWereldBouwer", new { }, wereldBouwer);
         }
-
     }
 }
