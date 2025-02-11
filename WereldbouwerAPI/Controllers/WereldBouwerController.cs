@@ -8,6 +8,7 @@ namespace WereldbouwerAPI.Controllers
     public class WereldBouwerController : ControllerBase
     {
         private static List<WereldBouwer> _wereldBouwers = new List<WereldBouwer>();
+        private static int _nextId = 1; // Initialize _nextId
         private readonly ILogger<WereldBouwerController> _logger;
 
         public WereldBouwerController(ILogger<WereldBouwerController> logger)
@@ -24,15 +25,15 @@ namespace WereldbouwerAPI.Controllers
         [HttpPost(Name = "PostWereldBouwer")]
         public ActionResult<WereldBouwer> Post(WereldBouwer wereldBouwer)
         {
-            _wereldBouwer.Id = _nextId++;
+            wereldBouwer.id = _nextId++; // Corrected variable name
             _wereldBouwers.Add(wereldBouwer);
-            return CreatedAtRoute("GetWereldBouwer", new { id = wereldBouwer.Id }, wereldBouwer);
+            return CreatedAtRoute("GetWereldBouwer", new { id = wereldBouwer.id }, wereldBouwer);
         }
 
         [HttpPut(Name = "PutWereldBouwer")]
         public ActionResult<WereldBouwer> Put(WereldBouwer wereldBouwer)
         {
-            var existingWereldBouwer = _wereldBouwers.FirstOrDefault(wb => wb.Id == wereldBouwer.Id);
+            var existingWereldBouwer = _wereldBouwers.FirstOrDefault(wb => wb.id == wereldBouwer.id);
             if (existingWereldBouwer == null)
             {
                 return NotFound();
@@ -40,18 +41,24 @@ namespace WereldbouwerAPI.Controllers
             existingWereldBouwer.name = wereldBouwer.name;
             existingWereldBouwer.maxLength = wereldBouwer.maxLength;
             existingWereldBouwer.maxHeight = wereldBouwer.maxHeight;
-            return CreatedAtRoute("GetWereldBouwer", new { id = existingWereldBouwer.Id }, existingWereldBouwer);
+            return CreatedAtRoute("GetWereldBouwer", new { id = existingWereldBouwer.id }, existingWereldBouwer);
         }
 
-        [HttpDelete(Name = "DeleteWereldBouwer")]
-        public ActionResult Delete(string name)
+        [HttpDelete("{id}", Name = "DeleteWereldBouwer")]
+        public IActionResult Delete(int id)
         {
-            var existingWereldBouwer = _wereldBouwers.FirstOrDefault(wb => wb.Id == id);
-            if (existingWereldBouwer == null)
+            var wereldBouwer = _wereldBouwers.FirstOrDefault(wb => wb.id == id);
+
+            if (wereldBouwer == null)
             {
                 return NotFound();
             }
-            _wereldBouwers.Remove(existingWereldBouwer);
+
+            _wereldBouwers.Remove(wereldBouwer); // Hier wordt de wereldBouwer verwijderd
+
+            // Bewaar de wijzigingen (afhankelijk van je databaseprovider)
+            // Bijvoorbeeld met Entity Framework:
+
             return NoContent();
         }
     }

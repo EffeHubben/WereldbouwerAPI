@@ -4,7 +4,7 @@ namespace WereldbouwerAPI
 {
     public class WereldBouwer
     {
-        public int Id { get; set; }
+        public int id { get; set; }
         [Required]
         public string name { get; set; }
         public int maxLength { get; set; }
