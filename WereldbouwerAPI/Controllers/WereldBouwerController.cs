@@ -7,7 +7,8 @@ namespace WereldbouwerAPI.Controllers
     [Route("[controller]")]
     public class WereldBouwerController : ControllerBase
     {
-        private List<WereldBouwer> _wereldBouwers = new List<WereldBouwer>();
+
+        private static List<WereldBouwer> _wereldBouwers = new List<WereldBouwer>();
         private readonly ILogger<WereldBouwerController> _logger;
 
         public WereldBouwerController(ILogger<WereldBouwerController> logger)
@@ -31,6 +32,31 @@ namespace WereldbouwerAPI.Controllers
         {
             _wereldBouwers.Add(wereldBouwer);
             return CreatedAtRoute("GetWereldBouwer", new { }, wereldBouwer);
+        }
+
+        [HttpPut(Name = "PutWereldBouwer")]
+        public ActionResult<WereldBouwer> Put(WereldBouwer wereldBouwer)
+        {
+            var existingWereldBouwer = _wereldBouwers.FirstOrDefault(wb => wb.name == wereldBouwer.name);
+            if (existingWereldBouwer == null)
+            {
+                return NotFound();
+            }
+            existingWereldBouwer.maxLength = wereldBouwer.maxLength;
+            existingWereldBouwer.maxHeight = wereldBouwer.maxHeight;
+            return CreatedAtRoute("GetWereldBouwer", new { }, existingWereldBouwer);
+        }
+
+        [HttpDelete(Name = "DeleteWereldBouwer")]
+        public ActionResult Delete(string name)
+        {
+            var existingWereldBouwer = _wereldBouwers.FirstOrDefault(wb => wb.name == name);
+            if (existingWereldBouwer == null)
+            {
+                return NotFound();
+            }
+            _wereldBouwers.Remove(existingWereldBouwer);
+            return NoContent();
         }
     }
 }
