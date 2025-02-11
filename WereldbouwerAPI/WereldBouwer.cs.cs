@@ -4,8 +4,16 @@ namespace WereldbouwerAPI
 {
     public class WereldBouwer
     {
-        public string name;
-        public int maxLength;
-        public int maxHeight;
+        [Required]
+        public string name; { get; set; }
+        public int maxLength; { get; set; }
+        public int maxHeight; { get; set; }
+
+        public WereldBouwer(string name, int maxLength, int maxHeight)
+        {
+            this.name = name;
+            this.maxLength = maxLength;
+            this.maxHeight = maxHeight;
+        }
     }
 }
