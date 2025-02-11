@@ -1,18 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Informatica\\WereldbouwerAPI\\WereldbouwerAPI\\",
+  "WorkspaceRootPath": "C:\\Github Folders\\WereldbouwerAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{527F55EB-59F0-4A52-B532-40970AC6E4FF}|WereldbouwerAPI\\WereldbouwerAPI.csproj|d:\\informatica\\wereldbouwerapi\\wereldbouwerapi\\wereldbouwerapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{527F55EB-59F0-4A52-B532-40970AC6E4FF}|WereldbouwerAPI\\WereldbouwerAPI.csproj|solutionrelative:wereldbouwerapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Github Folders\\WereldbouwerAPI\\WereldbouwerAPI\\WeatherForecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WereldbouwerAPI\\WeatherForecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{527F55EB-59F0-4A52-B532-40970AC6E4FF}|WereldbouwerAPI\\WereldbouwerAPI.csproj|d:\\informatica\\wereldbouwerapi\\wereldbouwerapi\\wereldbouwerapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{527F55EB-59F0-4A52-B532-40970AC6E4FF}|WereldbouwerAPI\\WereldbouwerAPI.csproj|solutionrelative:wereldbouwerapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Github Folders\\WereldbouwerAPI\\WereldbouwerAPI\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WereldbouwerAPI\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{527F55EB-59F0-4A52-B532-40970AC6E4FF}|WereldbouwerAPI\\WereldbouwerAPI.csproj|d:\\informatica\\wereldbouwerapi\\wereldbouwerapi\\wereldbouwerapi\\wereldbouwerapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{527F55EB-59F0-4A52-B532-40970AC6E4FF}|WereldbouwerAPI\\WereldbouwerAPI.csproj|solutionrelative:wereldbouwerapi\\wereldbouwerapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Github Folders\\WereldbouwerAPI\\WereldbouwerAPI\\Controllers\\WeatherForecastController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WereldbouwerAPI\\Controllers\\WeatherForecastController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Github Folders\\WereldbouwerAPI\\WereldbouwerAPI\\WereldbouwerAPI.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WereldbouwerAPI\\WereldbouwerAPI.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -31,38 +35,49 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "D:\\Informatica\\WereldbouwerAPI\\WereldbouwerAPI\\WereldbouwerAPI\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "WereldbouwerAPI\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "D:\\Informatica\\WereldbouwerAPI\\WereldbouwerAPI\\WereldbouwerAPI\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "WereldbouwerAPI\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAuwCQAAAATAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Github Folders\\WereldbouwerAPI\\WereldbouwerAPI\\Program.cs",
+              "RelativeDocumentMoniker": "WereldbouwerAPI\\Program.cs",
+              "ToolTip": "C:\\Github Folders\\WereldbouwerAPI\\WereldbouwerAPI\\Program.cs",
+              "RelativeToolTip": "WereldbouwerAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T09:49:53.007Z",
+              "WhenOpened": "2025-02-11T12:25:54.457Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Github Folders\\WereldbouwerAPI\\WereldbouwerAPI\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "WereldbouwerAPI\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Github Folders\\WereldbouwerAPI\\WereldbouwerAPI\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "WereldbouwerAPI\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAuwCQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T09:49:53.007Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "WereldbouwerAPI.http",
-              "DocumentMoniker": "D:\\Informatica\\WereldbouwerAPI\\WereldbouwerAPI\\WereldbouwerAPI\\WereldbouwerAPI.http",
+              "DocumentMoniker": "C:\\Github Folders\\WereldbouwerAPI\\WereldbouwerAPI\\WereldbouwerAPI.http",
               "RelativeDocumentMoniker": "WereldbouwerAPI\\WereldbouwerAPI.http",
-              "ToolTip": "D:\\Informatica\\WereldbouwerAPI\\WereldbouwerAPI\\WereldbouwerAPI\\WereldbouwerAPI.http",
+              "ToolTip": "C:\\Github Folders\\WereldbouwerAPI\\WereldbouwerAPI\\WereldbouwerAPI.http",
               "RelativeToolTip": "WereldbouwerAPI\\WereldbouwerAPI.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-02-11T09:49:44.256Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-11T09:49:44.256Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "D:\\Informatica\\WereldbouwerAPI\\WereldbouwerAPI\\WereldbouwerAPI\\WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Github Folders\\WereldbouwerAPI\\WereldbouwerAPI\\WeatherForecast.cs",
               "RelativeDocumentMoniker": "WereldbouwerAPI\\WeatherForecast.cs",
-              "ToolTip": "D:\\Informatica\\WereldbouwerAPI\\WereldbouwerAPI\\WereldbouwerAPI\\WeatherForecast.cs",
+              "ToolTip": "C:\\Github Folders\\WereldbouwerAPI\\WereldbouwerAPI\\WeatherForecast.cs",
               "RelativeToolTip": "WereldbouwerAPI\\WeatherForecast.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-11T09:49:05.593Z",
               "EditorCaption": ""
