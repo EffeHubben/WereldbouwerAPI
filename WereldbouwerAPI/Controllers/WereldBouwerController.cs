@@ -25,7 +25,8 @@ namespace WereldbouwerAPI.Controllers
         [HttpPost(Name = "PostWereldBouwer")]
         public ActionResult<WereldBouwer> Post(WereldBouwer wereldBouwer)
         {
-            wereldBouwer.id = _nextId++; // Corrected variable name
+            //wereldBouwer.id = _nextId++; // Corrected variable name
+            wereldBouwer.id = = Guid.NewGuid(); // Generate a new GUID
             _wereldBouwers.Add(wereldBouwer);
             return CreatedAtRoute("GetWereldBouwer", new { id = wereldBouwer.id }, wereldBouwer);
         }
