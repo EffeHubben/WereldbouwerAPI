@@ -1,6 +1,15 @@
+using WereldbouwerAPI.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+var sqlConnectionString = builder.Configuration["SqlConnectionString"];
+
+if (string.IsNullOrEmpty(sqlConnectionString))
+{
+    throw new InvalidOperationException("SqlConnectionString is required");
+}
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

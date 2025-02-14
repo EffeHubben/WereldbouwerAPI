@@ -8,7 +8,7 @@ namespace WereldbouwerAPI.Controllers
     public class WereldBouwerController : ControllerBase
     {
         private static List<WereldBouwer> _wereldBouwers = new List<WereldBouwer>();
-        private static int _nextId = 1; // Initialize _nextId
+        //private static int _nextId = 1; // Initialize _nextId
         private readonly ILogger<WereldBouwerController> _logger;
 
         public WereldBouwerController(ILogger<WereldBouwerController> logger)
@@ -26,7 +26,7 @@ namespace WereldbouwerAPI.Controllers
         public ActionResult<WereldBouwer> Post(WereldBouwer wereldBouwer)
         {
             //wereldBouwer.id = _nextId++; // Corrected variable name
-            wereldBouwer.id = = Guid.NewGuid(); // Generate a new GUID
+            wereldBouwer.id = Guid.NewGuid(); // Generate a new GUID
             _wereldBouwers.Add(wereldBouwer);
             return CreatedAtRoute("GetWereldBouwer", new { id = wereldBouwer.id }, wereldBouwer);
         }
@@ -47,7 +47,7 @@ namespace WereldbouwerAPI.Controllers
 
 
         [HttpDelete("{id}", Name = "DeleteWereldBouwer")]
-        public IActionResult Delete(int id)
+        public IActionResult Delete(Guid id)
         {
             var wereldBouwerToDelete = _wereldBouwers.FirstOrDefault(wb => wb.id == id);
             if (wereldBouwerToDelete == null)
