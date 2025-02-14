@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace WereldbouwerAPI
 {
@@ -7,8 +8,9 @@ namespace WereldbouwerAPI
     {
         Task<IEnumerable<WereldBouwer>> GetAllAsync();
         Task<WereldBouwer> GetByIdAsync(Guid id);
-        Task AddAsync(WereldBouwer wereldBouwer);
+        Task<WereldBouwer> AddAsync(WereldBouwer wereldBouwer); // Updated to return Task<WereldBouwer>
         Task UpdateAsync(WereldBouwer wereldBouwer);
         Task DeleteAsync(Guid id);
     }
 }
+

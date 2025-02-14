@@ -1,15 +1,17 @@
-using WereldbouwerAPI.Repositories;
+
+using WereldbouwerAPI;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.Configure<RouteOptions>(o => o.LowercaseUrls = true);
+
 var sqlConnectionString = builder.Configuration["SqlConnectionString"];
 
-if (string.IsNullOrEmpty(sqlConnectionString))
-{
-    throw new InvalidOperationException("SqlConnectionString is required");
-}
+if (string.IsNullOrWhiteSpace(sqlConnectionString))
+    throw new InvalidProgramException("Configuration variable SqlConnectionString not found");
 
+builder.Services.AddTransient<WereldBouwerRepository, WereldBouwerRepository>(o => new WereldBouwerRepository(sqlConnectionString));
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

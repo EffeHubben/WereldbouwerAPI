@@ -18,41 +18,56 @@ namespace WereldbouwerAPI.Controllers
         }
 
         [HttpGet(Name = "GetWereldBouwer")]
-        public async Task<IEnumerable<WereldBouwer>> Get()
+        public async Task<ActionResult<IEnumerable<WereldBouwer>>> Get()
         {
-            return await _wereldBouwerRepository.GetAllAsync();
+            var wereldBouwers = await _wereldBouwerRepository.GetAllAsync();
+            return Ok(wereldBouwers);
         }
 
-        [HttpPost(Name = "PostWereldBouwer")]
-        public async Task<ActionResult<WereldBouwer>> Post(WereldBouwer wereldBouwer)
+        [HttpGet("{id}", Name = "GetWereldBouwerById")]
+        public async Task<ActionResult<WereldBouwer>> Get(Guid wereldBouwerId)
         {
-            await _wereldBouwerRepository.AddAsync(wereldBouwer);
-            return CreatedAtRoute("GetWereldBouwer", new { id = wereldBouwer.id }, wereldBouwer);
-        }
-
-        [HttpPut(Name = "PutWereldBouwer")]
-        public async Task<ActionResult<WereldBouwer>> Put(WereldBouwer wereldBouwer)
-        {
-            var existingWereldBouwer = await _wereldBouwerRepository.GetByIdAsync(wereldBouwer.id);
-            if (existingWereldBouwer == null)
-            {
-                return NotFound();
-            }
-            await _wereldBouwerRepository.UpdateAsync(wereldBouwer);
-            return CreatedAtRoute("GetWereldBouwer", new { id = wereldBouwer.id }, wereldBouwer);
-        }
-
-        [HttpDelete("{id}", Name = "DeleteWereldBouwer")]
-        public async Task<IActionResult> Delete(Guid id)
-        {
-            var wereldBouwer = await _wereldBouwerRepository.GetByIdAsync(id);
+            var wereldBouwer = await _wereldBouwerRepository.GetByIdAsync(wereldBouwerId);
             if (wereldBouwer == null)
             {
                 return NotFound();
             }
+            return Ok(wereldBouwer);
+        }
 
-            await _wereldBouwerRepository.DeleteAsync(id);
-            return NoContent();
+        [HttpPost(Name = "PostWereldBouwer")]
+        public async Task<ActionResult> Post(WereldBouwer wereldBouwer)
+        {
+            wereldBouwer.id = Guid.NewGuid();
+            await _wereldBouwerRepository.AddAsync(wereldBouwer);
+            return CreatedAtRoute("GetWereldBouwer", new { id = wereldBouwer.id }, wereldBouwer);
+        }
+
+
+        [HttpPut("{wereldBouwerId}", Name = "PutWereldBouwer")]
+        public async Task<ActionResult> Put(Guid wereldBouwerId, WereldBouwer newWereldBouwer)
+        {
+            var existingWereldBouwer = await _wereldBouwerRepository.GetByIdAsync(wereldBouwerId);
+            if (existingWereldBouwer == null)
+            {
+                return NotFound();
+            }
+            await _wereldBouwerRepository.UpdateAsync(newWereldBouwer);
+            return CreatedAtRoute("GetWereldBouwer", new { id = newWereldBouwer.id }, newWereldBouwer);
+        }
+
+
+        [HttpDelete("{wereldBouwerId}", Name = "DeleteWereldBouwer")]
+        public async Task<IActionResult> Delete(Guid wereldBouwerId)
+        {
+            var existingWereldBouwer = await _wereldBouwerRepository.GetByIdAsync(wereldBouwerId);
+            if (existingWereldBouwer == null)
+            {
+                return NotFound();
+            }
+
+            await _wereldBouwerRepository.DeleteAsync(wereldBouwerId);
+            return Ok();
         }
     }
 }

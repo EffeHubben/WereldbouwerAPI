@@ -2,51 +2,63 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Dapper;
+using Microsoft.Data.SqlClient;
 
 namespace WereldbouwerAPI
 {
     public class WereldBouwerRepository : IWereldBouwerRepository
     {
-        private readonly List<WereldBouwer> _wereldBouwers = new List<WereldBouwer>();
+        private readonly string sqlConnectionString;
+
+        public WereldBouwerRepository(string sqlConnectionString)
+        {
+            this.sqlConnectionString = sqlConnectionString;
+        }
 
         public async Task<IEnumerable<WereldBouwer>> GetAllAsync()
         {
-            return await Task.FromResult(_wereldBouwers);
+            using (var sqlConnection = new SqlConnection(sqlConnectionString))
+            {
+                return await sqlConnection.QueryAsync<WereldBouwer>("SELECT * FROM [Environment2D]");
+            }
         }
 
         public async Task<WereldBouwer> GetByIdAsync(Guid id)
         {
-            var wereldBouwer = _wereldBouwers.FirstOrDefault(wb => wb.id == id);
-            return await Task.FromResult(wereldBouwer);
+            using (var sqlConnection = new SqlConnection(sqlConnectionString))
+            {
+                return await sqlConnection.QuerySingleOrDefaultAsync<WereldBouwer>("SELECT * FROM [Environment2D] WHERE Id = @Id", new { id });
+            }
         }
 
-        public async Task AddAsync(WereldBouwer wereldBouwer)
+        public async Task<WereldBouwer> AddAsync(WereldBouwer wereldBouwer)
         {
-            wereldBouwer.id = Guid.NewGuid();
-            _wereldBouwers.Add(wereldBouwer);
-            await Task.CompletedTask;
+            using (var sqlConnection = new SqlConnection(sqlConnectionString))
+            {
+                await sqlConnection.ExecuteAsync("INSERT INTO [Environment2D] (Id, Name, MaxHeight, MaxLength) VALUES (@Id, @Name, @MaxHeight, @MaxLength)", wereldBouwer);
+                return wereldBouwer;
+            }
         }
 
         public async Task UpdateAsync(WereldBouwer wereldBouwer)
         {
-            var existingWereldBouwer = await GetByIdAsync(wereldBouwer.id);
-            if (existingWereldBouwer != null)
+            using (var sqlConnection = new SqlConnection(sqlConnectionString))
             {
-                existingWereldBouwer.name = wereldBouwer.name;
-                existingWereldBouwer.maxLength = wereldBouwer.maxLength;
-                existingWereldBouwer.maxHeight = wereldBouwer.maxHeight;
+                await sqlConnection.ExecuteAsync("UPDATE [Environment2D] SET " +
+                                                 "Name = @Name, " +
+                                                 "MaxHeight = @MaxHeight, " +
+                                                 "MaxLength = @MaxLength " +
+                                                 "WHERE Id = @Id", wereldBouwer);
             }
-            await Task.CompletedTask;
         }
 
         public async Task DeleteAsync(Guid id)
         {
-            var wereldBouwer = await GetByIdAsync(id);
-            if (wereldBouwer != null)
+            using (var sqlConnection = new SqlConnection(sqlConnectionString))
             {
-                _wereldBouwers.Remove(wereldBouwer);
+                await sqlConnection.ExecuteAsync("DELETE FROM [Environment2D] WHERE Id = @Id", new { id });
             }
-            await Task.CompletedTask;
         }
     }
 }
