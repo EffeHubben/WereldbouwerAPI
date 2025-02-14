@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using WereldbouwerAPI;
+using System.Threading.Tasks;
 
 namespace WereldbouwerAPI.Controllers
 {
@@ -7,57 +8,51 @@ namespace WereldbouwerAPI.Controllers
     [Route("[controller]")]
     public class WereldBouwerController : ControllerBase
     {
-        private static List<WereldBouwer> _wereldBouwers = new List<WereldBouwer>();
-        //private static int _nextId = 1; // Initialize _nextId
+        private readonly IWereldBouwerRepository _wereldBouwerRepository;
         private readonly ILogger<WereldBouwerController> _logger;
 
-        public WereldBouwerController(ILogger<WereldBouwerController> logger)
+        public WereldBouwerController(IWereldBouwerRepository repository, ILogger<WereldBouwerController> logger)
         {
+            _wereldBouwerRepository = repository;
             _logger = logger;
         }
 
         [HttpGet(Name = "GetWereldBouwer")]
-        public IEnumerable<WereldBouwer> Get()
+        public async Task<IEnumerable<WereldBouwer>> Get()
         {
-            return _wereldBouwers;
+            return await _wereldBouwerRepository.GetAllAsync();
         }
 
         [HttpPost(Name = "PostWereldBouwer")]
-        public ActionResult<WereldBouwer> Post(WereldBouwer wereldBouwer)
+        public async Task<ActionResult<WereldBouwer>> Post(WereldBouwer wereldBouwer)
         {
-            //wereldBouwer.id = _nextId++; // Corrected variable name
-            wereldBouwer.id = Guid.NewGuid(); // Generate a new GUID
-            _wereldBouwers.Add(wereldBouwer);
+            await _wereldBouwerRepository.AddAsync(wereldBouwer);
             return CreatedAtRoute("GetWereldBouwer", new { id = wereldBouwer.id }, wereldBouwer);
         }
 
         [HttpPut(Name = "PutWereldBouwer")]
-        public ActionResult<WereldBouwer> Put(WereldBouwer wereldBouwer)
+        public async Task<ActionResult<WereldBouwer>> Put(WereldBouwer wereldBouwer)
         {
-            var existingWereldBouwer = _wereldBouwers.FirstOrDefault(wb => wb.id == wereldBouwer.id);
+            var existingWereldBouwer = await _wereldBouwerRepository.GetByIdAsync(wereldBouwer.id);
             if (existingWereldBouwer == null)
             {
                 return NotFound();
             }
-            existingWereldBouwer.name = wereldBouwer.name;
-            existingWereldBouwer.maxLength = wereldBouwer.maxLength;
-            existingWereldBouwer.maxHeight = wereldBouwer.maxHeight;
-            return CreatedAtRoute("GetWereldBouwer", new { id = existingWereldBouwer.id }, existingWereldBouwer);
+            await _wereldBouwerRepository.UpdateAsync(wereldBouwer);
+            return CreatedAtRoute("GetWereldBouwer", new { id = wereldBouwer.id }, wereldBouwer);
         }
 
-
         [HttpDelete("{id}", Name = "DeleteWereldBouwer")]
-        public IActionResult Delete(Guid id)
+        public async Task<IActionResult> Delete(Guid id)
         {
-            var wereldBouwerToDelete = _wereldBouwers.FirstOrDefault(wb => wb.id == id);
-            if (wereldBouwerToDelete == null)
+            var wereldBouwer = await _wereldBouwerRepository.GetByIdAsync(id);
+            if (wereldBouwer == null)
             {
                 return NotFound();
             }
 
-            _wereldBouwers.Remove(wereldBouwerToDelete);
+            await _wereldBouwerRepository.DeleteAsync(id);
             return NoContent();
         }
-
     }
 }
