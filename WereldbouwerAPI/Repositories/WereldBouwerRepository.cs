@@ -36,7 +36,7 @@ namespace WereldbouwerAPI
         {
             using (var sqlConnection = new SqlConnection(sqlConnectionString))
             {
-                await sqlConnection.ExecuteAsync("INSERT INTO [Environment2D] (Id, Name, MaxHeight, MaxLength) VALUES (@Id, @Name, @MaxHeight, @MaxLength)", wereldBouwer);
+                await sqlConnection.ExecuteAsync("INSERT INTO [Environment2D] (Id, Name, OwnerUserId, MaxHeight, MaxLength) VALUES (@Id, @Name, @OwnerUserId, @MaxHeight, @MaxLength)", wereldBouwer);
                 return wereldBouwer;
             }
         }
@@ -47,6 +47,7 @@ namespace WereldbouwerAPI
             {
                 await sqlConnection.ExecuteAsync("UPDATE [Environment2D] SET " +
                                                  "Name = @Name, " +
+                                                 "OwnerUserId = @OwnerUserId, " +
                                                  "MaxHeight = @MaxHeight, " +
                                                  "MaxLength = @MaxLength " +
                                                  "WHERE Id = @Id", wereldBouwer);

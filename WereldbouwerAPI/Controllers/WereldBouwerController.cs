@@ -10,6 +10,7 @@ namespace WereldbouwerAPI.Controllers
     {
         private readonly IWereldBouwerRepository _wereldBouwerRepository;
         private readonly ILogger<WereldBouwerController> _logger;
+        private static List<WereldBouwer> _wereldBouwers = new List<WereldBouwer>();
 
         public WereldBouwerController(IWereldBouwerRepository repository, ILogger<WereldBouwerController> logger)
         {
@@ -28,6 +29,7 @@ namespace WereldbouwerAPI.Controllers
         public async Task<ActionResult<WereldBouwer>> Get(Guid wereldBouwerId)
         {
             var wereldBouwer = await _wereldBouwerRepository.GetByIdAsync(wereldBouwerId);
+            _wereldBouwers.Add(wereldBouwer);
             if (wereldBouwer == null)
             {
                 return NotFound();
@@ -36,7 +38,7 @@ namespace WereldbouwerAPI.Controllers
         }
 
         [HttpPost(Name = "PostWereldBouwer")]
-        public async Task<ActionResult> Post(WereldBouwer wereldBouwer)
+        public async Task<IActionResult> Post(WereldBouwer wereldBouwer)
         {
             wereldBouwer.id = Guid.NewGuid();
             await _wereldBouwerRepository.AddAsync(wereldBouwer);
@@ -52,6 +54,7 @@ namespace WereldbouwerAPI.Controllers
             {
                 return NotFound();
             }
+            newWereldBouwer.id = wereldBouwerId;
             await _wereldBouwerRepository.UpdateAsync(newWereldBouwer);
             return CreatedAtRoute("GetWereldBouwer", new { id = newWereldBouwer.id }, newWereldBouwer);
         }
@@ -67,7 +70,7 @@ namespace WereldbouwerAPI.Controllers
             }
 
             await _wereldBouwerRepository.DeleteAsync(wereldBouwerId);
-            return Ok();
+            return Ok(wereldBouwerId);
         }
     }
 }
