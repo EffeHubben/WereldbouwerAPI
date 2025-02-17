@@ -24,7 +24,7 @@ namespace WereldbouwerAPI.Controllers
             return Ok(wereldBouwers);
         }
 
-        [HttpGet("{id}", Name = "GetWereldBouwerById")]
+        [HttpGet("{wereldBouwerId}", Name = "GetWereldBouwerById")]
         public async Task<ActionResult<WereldBouwer>> Get(Guid wereldBouwerId)
         {
             var wereldBouwer = await _wereldBouwerRepository.GetByIdAsync(wereldBouwerId);

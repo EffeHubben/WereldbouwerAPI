@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QoBzKZj6gdc=",
+  "dgSpecHash": "YJrJFmvre5U=",
   "success": true,
-  "projectFilePath": "D:\\Github folders\\WereldbouwerAPI\\WereldBouwerTests\\WereldBouwerTests.csproj",
+  "projectFilePath": "C:\\Github Folders\\WereldbouwerAPI\\WereldBouwerTests\\WereldBouwerTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\TingK\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\TingK\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
