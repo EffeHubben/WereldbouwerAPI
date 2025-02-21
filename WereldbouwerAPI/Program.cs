@@ -8,27 +8,27 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.Configure<RouteOptions>(o => o.LowercaseUrls = true);
 
-builder.Services.AddAuthorization();
-builder.Services
-    .AddIdentityApiEndpoints<IdentityUser>(options =>
-    {
-        options.User.RequireUniqueEmail = true;
-        options.Password.RequiredLength = 10;
-    })
+//builder.Services.AddAuthorization();
+//builder.Services
+//    .AddIdentityApiEndpoints<IdentityUser>(options =>
+//    {
+//        options.User.RequireUniqueEmail = true;
+//        options.Password.RequiredLength = 10;
+//    })
 
-    .AddRoles<IdentityRole>()
-    .AddDapperStores(options => {
-        options.ConnectionString = builder.Configuration
-        .GetConnectionString("DapperIdentity");
-});
+//    .AddRoles<IdentityRole>()
+//    .AddDapperStores(options => {
+//        options.ConnectionString = builder.Configuration
+//        .GetConnectionString("DapperIdentity");
+//});
 
 
-builder.Services
-    .AddOptions<BearerTokenOptions>(IdentityConstants.BearerScheme)
-    .Configure(options =>
-    {
-        options.BearerTokenExpiration = TimeSpan.FromMinutes(60);
-    })
+//builder.Services
+//    .AddOptions<BearerTokenOptions>(IdentityConstants.BearerScheme)
+//    .Configure(options =>
+//    {
+//        options.BearerTokenExpiration = TimeSpan.FromMinutes(60);
+//    });
 
 //ar sqlConnectionString = builder.Configuration["SqlConnectionString"];
 var sqlConnectionString = builder.Configuration.GetValue<string>("SqlConnectionString");
@@ -57,8 +57,8 @@ if (app.Environment.IsDevelopment())
 }
 app.UseAuthorization();
 
-app.MapGroup("/account")
-      .MapIdentityApi<IdentityUser>();
+//app.MapGroup("/account")
+//      .MapIdentityApi<IdentityUser>();
 
 app.MapGet("/", () => $"The API is up . Connection string found: {(sqlConnectionStringFound ? "very good" : "very bad")}");
 
@@ -66,6 +66,6 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
-app.MapControllers().RequireAuthorization();
+app.MapControllers();//.RequireAuthorization();
 
 app.Run();
