@@ -125,7 +125,7 @@ namespace WereldBouwerTests
         }
 
         [Fact]
-        public async Task Delete_ExistingWereldBouwer_ReturnsNoContent()
+        public async Task Delete_ExistingWereldBouwer_ReturnsOkObjectResult()
         {
             // Arrange
             var wereldBouwerId = Guid.NewGuid();
