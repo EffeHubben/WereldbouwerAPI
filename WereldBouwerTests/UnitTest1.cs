@@ -104,7 +104,7 @@ namespace WereldBouwerTests
             var result = await _controller.Put(wereldBouwerId, updatedWereldBouwer);
 
             // Assert
-            var okResult = Assert.IsType<CreatedAtRouteResult>(result);
+            var okResult = Assert.IsType<OkObjectResult>(result);
             var returnValue = Assert.IsType<WereldBouwer>(okResult.Value);
             Assert.Equal(updatedWereldBouwer.name, returnValue.name);
         }
@@ -137,7 +137,7 @@ namespace WereldBouwerTests
             var result = await _controller.Delete(wereldBouwerId);
 
             // Assert
-            Assert.IsType<OkObjectResult>(result);
+            Assert.IsType<NoContentResult>(result);
         }
 
         // Additional helper methods for generating test data
