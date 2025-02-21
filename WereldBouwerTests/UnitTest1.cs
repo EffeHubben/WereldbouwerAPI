@@ -139,5 +139,30 @@ namespace WereldBouwerTests
             // Assert
             Assert.IsType<NoContentResult>(result);
         }
+
+        // Additional helper methods for generating test data
+        private List<WereldBouwer> GenerateRandomWereldBouwers(int numberOfWereldBouwers)
+        {
+            var list = new List<WereldBouwer>();
+
+            for (int i = 0; i < numberOfWereldBouwers; i++)
+            {
+                list.Add(GenerateRandomWereldBouwer($"Random WereldBouwer {i}"));
+            }
+
+            return list;
+        }
+
+        private WereldBouwer GenerateRandomWereldBouwer(string name)
+        {
+            var random = new Random();
+            return new WereldBouwer
+            {
+                id = Guid.NewGuid(),
+                name = name ?? "Random WereldBouwer",
+                maxHeight = random.Next(1, 100),
+                maxLength = random.Next(1, 100)
+            };
+        }
     }
 }
