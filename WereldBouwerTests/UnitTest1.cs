@@ -61,6 +61,20 @@ namespace WereldBouwerTests
         }
 
         [Fact]
+        public async Task Get_ById_ReturnsNotFound()
+        {
+            // Arrange
+            var wereldBouwerId = Guid.NewGuid();
+            _mockRepo.Setup(repo => repo.GetByIdAsync(wereldBouwerId)).ReturnsAsync((WereldBouwer)null);
+
+            // Act
+            var result = await _controller.Get(wereldBouwerId);
+
+            // Assert
+            Assert.IsType<NotFoundResult>(result.Result);
+        }
+
+        [Fact]
         public async Task Post_CreatesNewWereldBouwer()
         {
             // Arrange
@@ -93,6 +107,21 @@ namespace WereldBouwerTests
             var okResult = Assert.IsType<OkObjectResult>(result);
             var returnValue = Assert.IsType<WereldBouwer>(okResult.Value);
             Assert.Equal(updatedWereldBouwer.name, returnValue.name);
+        }
+
+        [Fact]
+        public async Task Put_NonExistingWereldBouwer_ReturnsNotFound()
+        {
+            // Arrange
+            var wereldBouwerId = Guid.NewGuid();
+            var updatedWereldBouwer = new WereldBouwer { id = wereldBouwerId, name = "Updated" };
+            _mockRepo.Setup(repo => repo.GetByIdAsync(wereldBouwerId)).ReturnsAsync((WereldBouwer)null);
+
+            // Act
+            var result = await _controller.Put(wereldBouwerId, updatedWereldBouwer);
+
+            // Assert
+            Assert.IsType<NotFoundResult>(result);
         }
 
         [Fact]
