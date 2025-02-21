@@ -3,8 +3,17 @@ using WereldbouwerAPI;
 
 var builder = WebApplication.CreateBuilder(args);
 
+//identity middleware = builder.Build();
+
 // Add services to the container.
 builder.Services.Configure<RouteOptions>(o => o.LowercaseUrls = true);
+
+builder.Services.AddAuthorization();
+builder.Services
+    .AddIdentityApiEndpoints<IdentityUser>()
+    .AddDapperStores(options => {
+        options.ConnectionString = dbConnectionString;
+});
 
 //ar sqlConnectionString = builder.Configuration["SqlConnectionString"];
 var sqlConnectionString = builder.Configuration.GetValue<string>("SqlConnectionString");
