@@ -110,11 +110,11 @@ namespace WereldBouwerTests
             var response = await _client.DeleteAsync($"/WereldBouwer/{id}");
 
             // Assert
-            response.StatusCode.Should().Be(HttpStatusCode.NoContent);
+            Assert.Equal(HttpStatusCode.NoContent, response.StatusCode);
 
             // Optional: Verify that the WereldBouwer is actually deleted
             var getResponse = await _client.GetAsync($"/WereldBouwer/{id}");
-            getResponse.StatusCode.Should().Be(HttpStatusCode.NotFound);
+            Assert.Equal(HttpStatusCode.NotFound, getResponse.StatusCode);
         }
 
         private async Task<WereldBouwer> CreateWereldBouwerAsync()
