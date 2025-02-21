@@ -172,3 +172,14 @@ D:\Github folders\WereldbouwerAPI\WereldBouwerTests\bin\Debug\net8.0\runtimes\wi
 D:\Github folders\WereldbouwerAPI\WereldBouwerTests\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 D:\Github folders\WereldbouwerAPI\WereldBouwerTests\bin\Debug\net8.0\WereldbouwerAPI.dll
 D:\Github folders\WereldbouwerAPI\WereldBouwerTests\bin\Debug\net8.0\WereldbouwerAPI.pdb
+D:\Github folders\WereldbouwerAPI\WereldBouwerTests\bin\Debug\net8.0\Avans.Identity.Dapper.dll
+D:\Github folders\WereldbouwerAPI\WereldBouwerTests\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+D:\Github folders\WereldbouwerAPI\WereldBouwerTests\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Github folders\WereldbouwerAPI\WereldBouwerTests\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Github folders\WereldbouwerAPI\WereldBouwerTests\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+D:\Github folders\WereldbouwerAPI\WereldBouwerTests\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Github folders\WereldbouwerAPI\WereldBouwerTests\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Github folders\WereldbouwerAPI\WereldBouwerTests\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+D:\Github folders\WereldbouwerAPI\WereldBouwerTests\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+D:\Github folders\WereldbouwerAPI\WereldBouwerTests\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+D:\Github folders\WereldbouwerAPI\WereldBouwerTests\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
