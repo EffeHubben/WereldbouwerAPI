@@ -10,10 +10,25 @@ builder.Services.Configure<RouteOptions>(o => o.LowercaseUrls = true);
 
 builder.Services.AddAuthorization();
 builder.Services
-    .AddIdentityApiEndpoints<IdentityUser>()
+    .AddIdentityApiEndpoints<IdentityUser>(options =>
+    {
+        options.User.RequireUniqueEmail = true;
+        options.Password.RequiredLength = 10;
+    })
+
+    .AddRoles<IdentityRole>()
     .AddDapperStores(options => {
-        options.ConnectionString = dbConnectionString;
+        options.ConnectionString = builder.Configuration
+        .GetConnectionString("DapperIdentity");
 });
+
+
+builder.Services
+    .AddOptions<BearerTokenOptions>(IdentityConstants.BearerScheme)
+    .Configure(options =>
+    {
+        options.BearerTokenExpiration = TimeSpan.FromMinutes(60);
+    })
 
 //ar sqlConnectionString = builder.Configuration["SqlConnectionString"];
 var sqlConnectionString = builder.Configuration.GetValue<string>("SqlConnectionString");
@@ -40,14 +55,17 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseAuthorization();
 
+app.MapGroup("/account")
+      .MapIdentityApi<IdentityUser>();
 
-app.MapGet("/", () => $"The API is up . Connection string found: {(sqlConnectionStringFound ? "" : "")}");
+app.MapGet("/", () => $"The API is up . Connection string found: {(sqlConnectionStringFound ? "very good" : "very bad")}");
 
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
-app.MapControllers();
+app.MapControllers().RequireAuthorization();
 
 app.Run();

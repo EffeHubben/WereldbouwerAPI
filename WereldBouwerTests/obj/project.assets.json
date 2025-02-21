@@ -101,6 +101,24 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Authorization/8.0.13": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Metadata": "8.0.13",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
+          "Microsoft.Extensions.Options": "8.0.2"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.AspNetCore.Authorization.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.AspNetCore.Authorization.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Cryptography.Internal/9.0.1": {
         "type": "package",
         "compile": {
@@ -126,6 +144,19 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Metadata/8.0.13": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Microsoft.AspNetCore.Metadata.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.AspNetCore.Metadata.dll": {
             "related": ".xml"
           }
         }
@@ -2767,6 +2798,7 @@
         "dependencies": {
           "Avans.Identity.DapperOrm": "1.0.3",
           "Dapper": "2.1.66",
+          "Microsoft.AspNetCore.Authorization": "8.0.13",
           "Microsoft.Data.SqlClient": "6.0.1",
           "Microsoft.Extensions.Configuration.UserSecrets": "9.0.2",
           "Swashbuckle.AspNetCore": "6.6.2"
@@ -2933,6 +2965,25 @@
         "readme.md"
       ]
     },
+    "Microsoft.AspNetCore.Authorization/8.0.13": {
+      "sha512": "cMdPz2hFN8fjEdUBelItljBrsbiz2eVspV5W5bee9c6OT4ChgprnHe7BKXYc3Wwzhxo/ls9XxcLuXZrfVCIT6Q==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authorization/8.0.13",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net462/Microsoft.AspNetCore.Authorization.dll",
+        "lib/net462/Microsoft.AspNetCore.Authorization.xml",
+        "lib/net8.0/Microsoft.AspNetCore.Authorization.dll",
+        "lib/net8.0/Microsoft.AspNetCore.Authorization.xml",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.xml",
+        "microsoft.aspnetcore.authorization.8.0.13.nupkg.sha512",
+        "microsoft.aspnetcore.authorization.nuspec"
+      ]
+    },
     "Microsoft.AspNetCore.Cryptography.Internal/9.0.1": {
       "sha512": "leaw8hC6wCKfAg2kAYT4plnaHI7o6bKB9IQy0yLWHmgV0GjE449pu0SEnnl7loEzdLgyQrKyVQvfz7wRErqmxQ==",
       "type": "package",
@@ -2969,6 +3020,25 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.xml",
         "microsoft.aspnetcore.cryptography.keyderivation.9.0.1.nupkg.sha512",
         "microsoft.aspnetcore.cryptography.keyderivation.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Metadata/8.0.13": {
+      "sha512": "V8HLO2Md9Vs/69FZ+kpXCyx9C0pnfMn/Mlnr35SctMEy3JVuaqkmb2Cn+K05n5uX8irVHOcql4ACMPK6tLuldA==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.metadata/8.0.13",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net462/Microsoft.AspNetCore.Metadata.dll",
+        "lib/net462/Microsoft.AspNetCore.Metadata.xml",
+        "lib/net8.0/Microsoft.AspNetCore.Metadata.dll",
+        "lib/net8.0/Microsoft.AspNetCore.Metadata.xml",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Metadata.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Metadata.xml",
+        "microsoft.aspnetcore.metadata.8.0.13.nupkg.sha512",
+        "microsoft.aspnetcore.metadata.nuspec"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
