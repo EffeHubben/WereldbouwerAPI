@@ -140,7 +140,7 @@ namespace WereldBouwerTests
             Assert.IsType<OkObjectResult>(result);
         }
 
-        // Additional helper methods for generating test data
+        // Additional helper methods for generating test dataee
         private List<WereldBouwer> GenerateRandomWereldBouwers(int numberOfWereldBouwers)
         {
             var list = new List<WereldBouwer>();
