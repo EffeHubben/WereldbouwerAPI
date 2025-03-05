@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WereldBouwerTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+436a75f39b78df7fbf1180dae98bc28995f66f97")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a289608d660f9a08608fae82403c0127c1c613c2")]
 [assembly: System.Reflection.AssemblyProductAttribute("WereldBouwerTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WereldBouwerTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
