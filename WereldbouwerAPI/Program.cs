@@ -30,8 +30,8 @@ builder.Services.Configure<RouteOptions>(o => o.LowercaseUrls = true);
 //        options.BearerTokenExpiration = TimeSpan.FromMinutes(60);
 //    });
 
-//ar sqlConnectionString = builder.Configuration["SqlConnectionString"];
-var sqlConnectionString = builder.Configuration.GetValue<string>("SqlConnectionString");
+var sqlConnectionString = builder.Configuration["SqlConnectionString"];
+//var sqlConnectionString = builder.Configuration.GetValue<string>("SqlConnectionString");
 var sqlConnectionStringFound = !string.IsNullOrWhiteSpace(sqlConnectionString);
 
 
