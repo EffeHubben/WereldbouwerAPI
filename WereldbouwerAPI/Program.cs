@@ -64,7 +64,7 @@ app.MapGet("/", () => $"The API is up . Connection string found: {(sqlConnection
 
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
+//app.UseAuthorization();
 
 app.MapControllers();//.RequireAuthorization();
 
