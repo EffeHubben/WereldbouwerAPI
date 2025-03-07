@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using WereldbouwerAPI;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 
 namespace WereldbouwerAPI.Controllers
 {
@@ -21,6 +22,7 @@ namespace WereldbouwerAPI.Controllers
         }
 
         [HttpGet(Name = "GetWereldBouwer")]
+        [Authorize]
         public async Task<ActionResult<IEnumerable<WereldBouwer>>> Get()
         {
             var userId = _authenticationService.GetCurrentAuthenticatedUserId();
@@ -29,6 +31,7 @@ namespace WereldbouwerAPI.Controllers
         }
 
         [HttpGet("{wereldBouwerId}", Name = "GetWereldBouwerById")]
+        [Authorize]
         public async Task<ActionResult<WereldBouwer>> Get(Guid wereldBouwerId)
         {
             var userId = _authenticationService.GetCurrentAuthenticatedUserId();
@@ -41,6 +44,7 @@ namespace WereldbouwerAPI.Controllers
         }
 
         [HttpPost(Name = "PostWereldBouwer")]
+        [Authorize]
         public async Task<IActionResult> Post(WereldBouwer wereldBouwer)
         {
             var userId = _authenticationService.GetCurrentAuthenticatedUserId();
@@ -52,6 +56,7 @@ namespace WereldbouwerAPI.Controllers
 
 
         [HttpPut("{wereldBouwerId}", Name = "PutWereldBouwer")]
+        [Authorize]
         public async Task<ActionResult> Put(Guid wereldBouwerId, WereldBouwer newWereldBouwer)
         {
             var userId = _authenticationService.GetCurrentAuthenticatedUserId();
@@ -68,6 +73,7 @@ namespace WereldbouwerAPI.Controllers
 
 
         [HttpDelete("{wereldBouwerId}", Name = "DeleteWereldBouwer")]
+        [Authorize]
         public async Task<IActionResult> Delete(Guid wereldBouwerId)
         {
             var userId = _authenticationService.GetCurrentAuthenticatedUserId();
