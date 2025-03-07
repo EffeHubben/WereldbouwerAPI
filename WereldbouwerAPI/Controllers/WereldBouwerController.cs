@@ -45,6 +45,7 @@ namespace WereldbouwerAPI.Controllers
         {
             var userId = _authenticationService.GetCurrentAuthenticatedUserId();
             wereldBouwer.id = Guid.NewGuid();
+            wereldBouwer.ownerUserId = userId;
             await _wereldBouwerRepository.AddAsync(wereldBouwer);
             return CreatedAtRoute("GetWereldBouwer", new { id = wereldBouwer.id }, wereldBouwer);
         }
@@ -60,6 +61,7 @@ namespace WereldbouwerAPI.Controllers
                 return NotFound();
             }
             newWereldBouwer.id = wereldBouwerId;
+            newWereldBouwer.ownerUserId = userId;
             await _wereldBouwerRepository.UpdateAsync(newWereldBouwer);
             return CreatedAtRoute("GetWereldBouwer", new { id = newWereldBouwer.id }, newWereldBouwer);
         }
