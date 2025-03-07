@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using WereldbouwerAPI;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication;
 
 namespace WereldbouwerAPI.Controllers
 {
@@ -9,17 +10,20 @@ namespace WereldbouwerAPI.Controllers
     public class WereldBouwerController : ControllerBase
     {
         private readonly IWereldBouwerRepository _wereldBouwerRepository;
+        private readonly IAuthenticationService _authenticationService;
         private readonly ILogger<WereldBouwerController> _logger;
 
-        public WereldBouwerController(IWereldBouwerRepository repository, ILogger<WereldBouwerController> logger)
+        public WereldBouwerController(IWereldBouwerRepository repository, IAuthenticationService authenticationService, ILogger<WereldBouwerController> logger)
         {
             _wereldBouwerRepository = repository;
+            _authenticationService = authenticationService;
             _logger = logger;
         }
 
         [HttpGet(Name = "GetWereldBouwer")]
         public async Task<ActionResult<IEnumerable<WereldBouwer>>> Get()
         {
+            var userId = _authenticationService.GetCurrentAuthenticatedUserId();
             var wereldBouwers = await _wereldBouwerRepository.GetAllAsync();
             return Ok(wereldBouwers);
         }
@@ -27,6 +31,7 @@ namespace WereldbouwerAPI.Controllers
         [HttpGet("{wereldBouwerId}", Name = "GetWereldBouwerById")]
         public async Task<ActionResult<WereldBouwer>> Get(Guid wereldBouwerId)
         {
+            var userId = _authenticationService.GetCurrentAuthenticatedUserId();
             var wereldBouwer = await _wereldBouwerRepository.GetByIdAsync(wereldBouwerId);
             if (wereldBouwer == null)
             {
@@ -38,6 +43,7 @@ namespace WereldbouwerAPI.Controllers
         [HttpPost(Name = "PostWereldBouwer")]
         public async Task<IActionResult> Post(WereldBouwer wereldBouwer)
         {
+            var userId = _authenticationService.GetCurrentAuthenticatedUserId();
             wereldBouwer.id = Guid.NewGuid();
             await _wereldBouwerRepository.AddAsync(wereldBouwer);
             return CreatedAtRoute("GetWereldBouwer", new { id = wereldBouwer.id }, wereldBouwer);
@@ -47,6 +53,7 @@ namespace WereldbouwerAPI.Controllers
         [HttpPut("{wereldBouwerId}", Name = "PutWereldBouwer")]
         public async Task<ActionResult> Put(Guid wereldBouwerId, WereldBouwer newWereldBouwer)
         {
+            var userId = _authenticationService.GetCurrentAuthenticatedUserId();
             var existingWereldBouwer = await _wereldBouwerRepository.GetByIdAsync(wereldBouwerId);
             if (existingWereldBouwer == null)
             {
@@ -61,6 +68,7 @@ namespace WereldbouwerAPI.Controllers
         [HttpDelete("{wereldBouwerId}", Name = "DeleteWereldBouwer")]
         public async Task<IActionResult> Delete(Guid wereldBouwerId)
         {
+            var userId = _authenticationService.GetCurrentAuthenticatedUserId();
             var existingWereldBouwer = await _wereldBouwerRepository.GetByIdAsync(wereldBouwerId);
             if (existingWereldBouwer == null)
             {

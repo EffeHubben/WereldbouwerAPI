@@ -20,7 +20,8 @@ namespace WereldBouwerTests
         {
             _mockRepo = new Mock<IWereldBouwerRepository>();
             _mockLogger = new Mock<ILogger<WereldBouwerController>>();
-            _controller = new WereldBouwerController(_mockRepo.Object, _mockLogger.Object);
+            var mockAuthService = new Mock<IAuthenticationService>();
+            _controller = new WereldBouwerController(_mockRepo.Object, mockAuthService.Object, _mockLogger.Object);
         }
 
         [Fact]
