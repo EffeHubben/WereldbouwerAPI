@@ -14,14 +14,15 @@ namespace WereldBouwerTests
     {
         private readonly Mock<IWereldBouwerRepository> _mockRepo;
         private readonly Mock<ILogger<WereldBouwerController>> _mockLogger;
+        private readonly Mock<IAuthenticationService> _mockAuthService;
         private readonly WereldBouwerController _controller;
 
         public WereldBouwerControllerTests()
         {
             _mockRepo = new Mock<IWereldBouwerRepository>();
             _mockLogger = new Mock<ILogger<WereldBouwerController>>();
-            var mockAuthService = new Mock<IAuthenticationService>();
-            _controller = new WereldBouwerController(_mockRepo.Object, mockAuthService.Object, _mockLogger.Object);
+            _mockAuthService = new Mock<IAuthenticationService>();
+            _controller = new WereldBouwerController(_mockRepo.Object, _mockAuthService.Object, _mockLogger.Object);
         }
 
         [Fact]
@@ -50,7 +51,7 @@ namespace WereldBouwerTests
             // Arrange
             var wereldBouwerId = Guid.NewGuid();
             var wereldBouwer = new WereldBouwer { id = wereldBouwerId, name = "Test" };
-            _mockRepo.Setup(repo => repo.GetByIdAsync(wereldBouwerId)).ReturnsAsync(wereldBouwer);
+            _mockRepo.Setup(repo => repo.GetByWereldbouwerIdAsync(wereldBouwerId)).ReturnsAsync(wereldBouwer);
 
             // Act
             var result = await _controller.Get(wereldBouwerId);
@@ -66,10 +67,42 @@ namespace WereldBouwerTests
         {
             // Arrange
             var wereldBouwerId = Guid.NewGuid();
-            _mockRepo.Setup(repo => repo.GetByIdAsync(wereldBouwerId)).ReturnsAsync((WereldBouwer)null);
+            _mockRepo.Setup(repo => repo.GetByWereldbouwerIdAsync(wereldBouwerId)).ReturnsAsync((WereldBouwer)null);
 
             // Act
             var result = await _controller.Get(wereldBouwerId);
+
+            // Assert
+            Assert.IsType<NotFoundResult>(result.Result);
+        }
+
+        [Fact]
+        public async Task Get_ByUserId_ReturnsWereldBouwer()
+        {
+            // Arrange
+            var userId = "test-user-id";
+            var wereldBouwer = new WereldBouwer { id = Guid.NewGuid(), name = "Test", ownerUserId = userId };
+            _mockRepo.Setup(repo => repo.GetByUserIdAsync(userId)).ReturnsAsync(new List<WereldBouwer> { wereldBouwer });
+
+            // Act
+            var result = await _controller.GetWereld(userId);
+
+            // Assert
+            var okResult = Assert.IsType<OkObjectResult>(result.Result);
+            var returnValue = Assert.IsType<List<WereldBouwer>>(okResult.Value);
+            Assert.Single(returnValue); // Controleer of de lijst slechts één item bevat
+            Assert.Equal(userId, returnValue[0].ownerUserId); // Controleer de eigenschap van het eerste item
+        }
+
+        [Fact]
+        public async Task Get_ByUserId_ReturnsNotFound()
+        {
+            // Arrange
+            var userId = "test-user-id";
+            _mockRepo.Setup(repo => repo.GetByUserIdAsync(userId)).ReturnsAsync((IEnumerable<WereldBouwer>)null);
+
+            // Act
+            var result = await _controller.GetWereld(userId);
 
             // Assert
             Assert.IsType<NotFoundResult>(result.Result);
@@ -80,6 +113,7 @@ namespace WereldBouwerTests
         {
             // Arrange
             var wereldBouwer = new WereldBouwer { name = "Test" };
+            _mockAuthService.Setup(auth => auth.GetCurrentAuthenticatedUserId()).Returns("test-user-id");
             _mockRepo.Setup(repo => repo.AddAsync(It.IsAny<WereldBouwer>())).ReturnsAsync(wereldBouwer);
 
             // Act
@@ -98,7 +132,7 @@ namespace WereldBouwerTests
             var wereldBouwerId = Guid.NewGuid();
             var existingWereldBouwer = new WereldBouwer { id = wereldBouwerId, name = "Existing" };
             var updatedWereldBouwer = new WereldBouwer { id = wereldBouwerId, name = "Updated" };
-            _mockRepo.Setup(repo => repo.GetByIdAsync(wereldBouwerId)).ReturnsAsync(existingWereldBouwer);
+            _mockRepo.Setup(repo => repo.GetByWereldbouwerIdAsync(wereldBouwerId)).ReturnsAsync(existingWereldBouwer);
             _mockRepo.Setup(repo => repo.UpdateAsync(updatedWereldBouwer)).Returns(Task.CompletedTask);
 
             // Act
@@ -116,7 +150,7 @@ namespace WereldBouwerTests
             // Arrange
             var wereldBouwerId = Guid.NewGuid();
             var updatedWereldBouwer = new WereldBouwer { id = wereldBouwerId, name = "Updated" };
-            _mockRepo.Setup(repo => repo.GetByIdAsync(wereldBouwerId)).ReturnsAsync((WereldBouwer)null);
+            _mockRepo.Setup(repo => repo.GetByWereldbouwerIdAsync(wereldBouwerId)).ReturnsAsync((WereldBouwer)null);
 
             // Act
             var result = await _controller.Put(wereldBouwerId, updatedWereldBouwer);
@@ -131,7 +165,7 @@ namespace WereldBouwerTests
             // Arrange
             var wereldBouwerId = Guid.NewGuid();
             var wereldBouwer = new WereldBouwer { id = wereldBouwerId, name = "Test" };
-            _mockRepo.Setup(repo => repo.GetByIdAsync(wereldBouwerId)).ReturnsAsync(wereldBouwer);
+            _mockRepo.Setup(repo => repo.GetByWereldbouwerIdAsync(wereldBouwerId)).ReturnsAsync(wereldBouwer);
             _mockRepo.Setup(repo => repo.DeleteAsync(wereldBouwerId)).Returns(Task.CompletedTask);
 
             // Act
@@ -141,7 +175,7 @@ namespace WereldBouwerTests
             Assert.IsType<OkObjectResult>(result);
         }
 
-        // Additional helper methods for generating test dataee
+        // Additional helper methods for generating test data
         private List<WereldBouwer> GenerateRandomWereldBouwers(int numberOfWereldBouwers)
         {
             var list = new List<WereldBouwer>();
