@@ -21,6 +21,15 @@ namespace WereldbouwerAPI.Controllers
             _logger = logger;
         }
 
+        [HttpGet("GetUserId", Name = "GetUserId")]
+        [Authorize]
+        public ActionResult<string> GetUserId()
+        {
+            var userId = _authenticationService.GetCurrentAuthenticatedUserId();
+            return Ok(userId);
+        }
+
+
         [HttpGet(Name = "GetWereldBouwer")]
         [Authorize]
         public async Task<ActionResult<IEnumerable<WereldBouwer>>> Get()
