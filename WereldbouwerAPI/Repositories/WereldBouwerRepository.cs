@@ -24,11 +24,20 @@ namespace WereldbouwerAPI
             }
         }
 
-        public async Task<WereldBouwer> GetByUserIdAsync(string id)
+        public async Task<IEnumerable<WereldBouwer>> GetByUserIdAsync(string id)
         {
             using (var sqlConnection = new SqlConnection(sqlConnectionString))
             {
-                return await sqlConnection.QuerySingleOrDefaultAsync<WereldBouwer>("SELECT * FROM [Environment2D] WHERE OwnerUserId = @Id", new { id });
+                var result = await sqlConnection.QueryAsync<WereldBouwer>("SELECT * FROM [Environment2D] WHERE OwnerUserId = @Id", new { id });
+                return result;
+            }
+        }
+
+        public async Task<WereldBouwer> GetByWereldbouwerIdAsync(Guid id)
+        {
+            using (var sqlConnection = new SqlConnection(sqlConnectionString))
+            {
+                return await sqlConnection.QuerySingleOrDefaultAsync<WereldBouwer>("SELECT * FROM [Environment2D] WHERE Id = @Id", new { id });
             }
         }
 

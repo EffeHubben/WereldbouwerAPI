@@ -135,7 +135,8 @@
               "RelativeToolTip": "WereldBouwerTests\\UnitTest1.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAApwBQAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T12:16:28.994Z"
+              "WhenOpened": "2025-02-17T12:16:28.994Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -145,7 +146,7 @@
               "RelativeDocumentMoniker": "WereldbouwerAPI\\Repositories\\IWereldBouwerRepository.cs",
               "ToolTip": "D:\\Github folders\\WereldbouwerAPI\\WereldbouwerAPI\\Repositories\\IWereldBouwerRepository.cs",
               "RelativeToolTip": "WereldbouwerAPI\\Repositories\\IWereldBouwerRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-14T13:32:50.722Z",
               "EditorCaption": ""
@@ -158,7 +159,7 @@
               "RelativeDocumentMoniker": "WereldbouwerAPI\\Repositories\\WereldBouwerRepository.cs",
               "ToolTip": "D:\\Github folders\\WereldbouwerAPI\\WereldbouwerAPI\\Repositories\\WereldBouwerRepository.cs",
               "RelativeToolTip": "WereldbouwerAPI\\Repositories\\WereldBouwerRepository.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAApwBkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAA3wBkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-14T10:08:31.809Z",
               "EditorCaption": ""
@@ -184,7 +185,7 @@
               "RelativeDocumentMoniker": "WereldbouwerAPI\\Controllers\\WereldBouwerController.cs",
               "ToolTip": "D:\\Github folders\\WereldbouwerAPI\\WereldbouwerAPI\\Controllers\\WereldBouwerController.cs",
               "RelativeToolTip": "WereldbouwerAPI\\Controllers\\WereldBouwerController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAwC4AAABJAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwCoAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-11T09:49:53.007Z",
               "EditorCaption": ""

@@ -39,12 +39,12 @@ namespace WereldbouwerAPI.Controllers
             return Ok(wereldBouwers);
         }
 
-        [HttpGet("GetWereld", Name = "GetWereldBouwerByUserId")]
+        [HttpGet("getwereld/{userId}", Name = "GetWereldBouwerByUserId")]
         [Authorize]
-        public async Task<ActionResult<WereldBouwer>> GetWereld()
+        public async Task<ActionResult<WereldBouwer>> GetWereld(string userId)
         {
-            var userId = _authenticationService.GetCurrentAuthenticatedUserId();
-            var wereldBouwer = await _wereldBouwerRepository.GetByIdAsync(userId);
+            //var userId = _authenticationService.GetCurrentAuthenticatedUserId();
+            var wereldBouwer = await _wereldBouwerRepository.GetByUserIdAsync(userId);
             if (wereldBouwer == null)
             {
                 return NotFound();
@@ -57,7 +57,7 @@ namespace WereldbouwerAPI.Controllers
         public async Task<ActionResult<WereldBouwer>> Get(Guid wereldBouwerId)
         {
             var userId = _authenticationService.GetCurrentAuthenticatedUserId();
-            var wereldBouwer = await _wereldBouwerRepository.GetByIdAsync(wereldBouwerId);
+            var wereldBouwer = await _wereldBouwerRepository.GetByWereldbouwerIdAsync(wereldBouwerId);
             if (wereldBouwer == null)
             {
                 return NotFound();
@@ -79,10 +79,10 @@ namespace WereldbouwerAPI.Controllers
 
         [HttpPut("{wereldBouwerId}", Name = "PutWereldBouwer")]
         [Authorize]
-        public async Task<ActionResult> Put(string wereldBouwerId, WereldBouwer newWereldBouwer)
+        public async Task<ActionResult> Put(Guid wereldBouwerId, WereldBouwer newWereldBouwer)
         {
             var userId = _authenticationService.GetCurrentAuthenticatedUserId();
-            var existingWereldBouwer = await _wereldBouwerRepository.GetByIdAsync(wereldBouwerId);
+            var existingWereldBouwer = await _wereldBouwerRepository.GetByWereldbouwerIdAsync(wereldBouwerId);
             if (existingWereldBouwer == null)
             {
                 return NotFound();
@@ -96,10 +96,10 @@ namespace WereldbouwerAPI.Controllers
 
         [HttpDelete("{wereldBouwerId}", Name = "DeleteWereldBouwer")]
         [Authorize]
-        public async Task<IActionResult> Delete(string wereldBouwerId)
+        public async Task<IActionResult> Delete(Guid wereldBouwerId)
         {
             var userId = _authenticationService.GetCurrentAuthenticatedUserId();
-            var existingWereldBouwer = await _wereldBouwerRepository.GetByIdAsync(wereldBouwerId);
+            var existingWereldBouwer = await _wereldBouwerRepository.GetByWereldbouwerIdAsync(wereldBouwerId);
             if (existingWereldBouwer == null)
             {
                 return NotFound();
