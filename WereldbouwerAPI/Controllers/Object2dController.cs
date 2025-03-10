@@ -30,10 +30,17 @@ namespace WereldbouwerAPI.Controllers
             return Ok(objects);
         }
 
-        [HttpPost("AddObject2D", Name = "AddObject2D")]
+        [HttpPost(Name = "AddObject2D")]
         [Authorize]
-        public async Task<ActionResult<Object2D>> AddObject2DAsync(Object2D object2D)
+        public async Task<ActionResult<Object2D>> AddObject2D(Object2D object2D)
         {
+            if (string.IsNullOrEmpty(object2D.prefabId))
+            {
+                ModelState.AddModelError("prefabId", "The prefabId field is required.");
+                return BadRequest(ModelState);
+            }
+
+            object2D.id = Guid.NewGuid();
             var result = await _object2DRepository.AddObject2DAsync(object2D);
             return Ok(result);
         }
