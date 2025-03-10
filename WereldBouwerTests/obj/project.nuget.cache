@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8AnTBkAvMvM=",
+  "dgSpecHash": "RcR27UWQlYY=",
   "success": true,
-  "projectFilePath": "D:\\Github folders\\WereldbouwerAPI\\WereldBouwerTests\\WereldBouwerTests.csproj",
+  "projectFilePath": "C:\\Users\\TingK\\Downloads\\WereldbouwerAPI\\WereldBouwerTests\\WereldBouwerTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\TingK\\.nuget\\packages\\avans.identity.dapperorm\\1.0.3\\avans.identity.dapperorm.1.0.3.nupkg.sha512",
     "C:\\Users\\TingK\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",

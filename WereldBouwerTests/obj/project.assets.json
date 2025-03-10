@@ -3866,11 +3866,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Github folders\\WereldbouwerAPI\\WereldBouwerTests\\WereldBouwerTests.csproj",
+      "projectUniqueName": "C:\\Users\\TingK\\Downloads\\WereldbouwerAPI\\WereldBouwerTests\\WereldBouwerTests.csproj",
       "projectName": "WereldBouwerTests",
-      "projectPath": "D:\\Github folders\\WereldbouwerAPI\\WereldBouwerTests\\WereldBouwerTests.csproj",
+      "projectPath": "C:\\Users\\TingK\\Downloads\\WereldbouwerAPI\\WereldBouwerTests\\WereldBouwerTests.csproj",
       "packagesPath": "C:\\Users\\TingK\\.nuget\\packages\\",
-      "outputPath": "D:\\Github folders\\WereldbouwerAPI\\WereldBouwerTests\\obj\\",
+      "outputPath": "C:\\Users\\TingK\\Downloads\\WereldbouwerAPI\\WereldBouwerTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3891,8 +3891,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "D:\\Github folders\\WereldbouwerAPI\\WereldbouwerAPI\\WereldbouwerAPI.csproj": {
-              "projectPath": "D:\\Github folders\\WereldbouwerAPI\\WereldbouwerAPI\\WereldbouwerAPI.csproj"
+            "C:\\Users\\TingK\\Downloads\\WereldbouwerAPI\\WereldbouwerAPI\\WereldbouwerAPI.csproj": {
+              "projectPath": "C:\\Users\\TingK\\Downloads\\WereldbouwerAPI\\WereldbouwerAPI\\WereldbouwerAPI.csproj"
             }
           }
         }
