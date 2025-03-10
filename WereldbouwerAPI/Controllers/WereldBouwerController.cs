@@ -108,5 +108,7 @@ namespace WereldbouwerAPI.Controllers
             await _wereldBouwerRepository.DeleteAsync(wereldBouwerId);
             return Ok(wereldBouwerId);
         }
+
+
     }
 }

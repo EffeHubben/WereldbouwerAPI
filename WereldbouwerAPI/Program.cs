@@ -46,6 +46,7 @@ builder.Services.AddIdentityApiEndpoints<IdentityUser>(options =>
 // to resolve the current user.
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddTransient<IAuthenticationService, AspNetIdentityAuthenticationService>();
+builder.Services.AddTransient<IObject2DRepository, Object2DRepository>(o => new Object2DRepository(sqlConnectionString));
 builder.Services.AddTransient<IWereldBouwerRepository, WereldBouwerRepository>(o => new WereldBouwerRepository(sqlConnectionString));
 
 builder.Services.AddControllers();
