@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\TingK\\Downloads\\WereldbouwerAPI\\WereldBouwerTests\\WereldBouwerTests.csproj": {}
+    "D:\\Github folders\\WereldbouwerAPI\\WereldBouwerTests\\WereldBouwerTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\TingK\\Downloads\\WereldbouwerAPI\\WereldbouwerAPI\\WereldbouwerAPI.csproj": {
+    "D:\\Github folders\\WereldbouwerAPI\\WereldbouwerAPI\\WereldbouwerAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TingK\\Downloads\\WereldbouwerAPI\\WereldbouwerAPI\\WereldbouwerAPI.csproj",
+        "projectUniqueName": "D:\\Github folders\\WereldbouwerAPI\\WereldbouwerAPI\\WereldbouwerAPI.csproj",
         "projectName": "WereldbouwerAPI",
-        "projectPath": "C:\\Users\\TingK\\Downloads\\WereldbouwerAPI\\WereldbouwerAPI\\WereldbouwerAPI.csproj",
+        "projectPath": "D:\\Github folders\\WereldbouwerAPI\\WereldbouwerAPI\\WereldbouwerAPI.csproj",
         "packagesPath": "C:\\Users\\TingK\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TingK\\Downloads\\WereldbouwerAPI\\WereldbouwerAPI\\obj\\",
+        "outputPath": "D:\\Github folders\\WereldbouwerAPI\\WereldbouwerAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -114,14 +114,14 @@
         }
       }
     },
-    "C:\\Users\\TingK\\Downloads\\WereldbouwerAPI\\WereldBouwerTests\\WereldBouwerTests.csproj": {
+    "D:\\Github folders\\WereldbouwerAPI\\WereldBouwerTests\\WereldBouwerTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TingK\\Downloads\\WereldbouwerAPI\\WereldBouwerTests\\WereldBouwerTests.csproj",
+        "projectUniqueName": "D:\\Github folders\\WereldbouwerAPI\\WereldBouwerTests\\WereldBouwerTests.csproj",
         "projectName": "WereldBouwerTests",
-        "projectPath": "C:\\Users\\TingK\\Downloads\\WereldbouwerAPI\\WereldBouwerTests\\WereldBouwerTests.csproj",
+        "projectPath": "D:\\Github folders\\WereldbouwerAPI\\WereldBouwerTests\\WereldBouwerTests.csproj",
         "packagesPath": "C:\\Users\\TingK\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TingK\\Downloads\\WereldbouwerAPI\\WereldBouwerTests\\obj\\",
+        "outputPath": "D:\\Github folders\\WereldbouwerAPI\\WereldBouwerTests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -142,8 +142,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\TingK\\Downloads\\WereldbouwerAPI\\WereldbouwerAPI\\WereldbouwerAPI.csproj": {
-                "projectPath": "C:\\Users\\TingK\\Downloads\\WereldbouwerAPI\\WereldbouwerAPI\\WereldbouwerAPI.csproj"
+              "D:\\Github folders\\WereldbouwerAPI\\WereldbouwerAPI\\WereldbouwerAPI.csproj": {
+                "projectPath": "D:\\Github folders\\WereldbouwerAPI\\WereldbouwerAPI\\WereldbouwerAPI.csproj"
               }
             }
           }
