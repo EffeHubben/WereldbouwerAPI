@@ -21,6 +21,7 @@ namespace WereldbouwerAPI.Controllers
             _logger = logger;
         }
 
+
         [HttpGet("GetUserId", Name = "GetUserId")]
         [Authorize]
         public ActionResult<string> GetUserId()
