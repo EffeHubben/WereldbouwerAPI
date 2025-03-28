@@ -34,16 +34,6 @@ builder.Services.AddIdentityApiEndpoints<IdentityUser>(options =>
 });
 
 
-//builder.Services
-//    .AddOptions<BearerTokenOptions>(IdentityConstants.BearerScheme)
-//    .Configure(options =>
-//    {
-//        options.BearerTokenExpiration = TimeSpan.FromMinutes(60);
-//   });
-
-
-// Adding the HTTP Context accessor to be injected. This is needed by the AspNetIdentityUserRepository
-// to resolve the current user.
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddTransient<IAuthenticationService, AspNetIdentityAuthenticationService>();
 builder.Services.AddTransient<IObject2DRepository, Object2DRepository>(o => new Object2DRepository(sqlConnectionString));
