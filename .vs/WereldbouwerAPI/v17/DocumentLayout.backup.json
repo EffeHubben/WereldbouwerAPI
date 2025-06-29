@@ -1,69 +1,69 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Github folders\\WereldbouwerAPI\\",
+  "WorkspaceRootPath": "C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{527F55EB-59F0-4A52-B532-40970AC6E4FF}|WereldbouwerAPI\\WereldbouwerAPI.csproj|d:\\github folders\\wereldbouwerapi\\wereldbouwerapi\\repositories\\wereldbouwerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{527F55EB-59F0-4A52-B532-40970AC6E4FF}|WereldbouwerAPI\\WereldbouwerAPI.csproj|solutionrelative:wereldbouwerapi\\repositories\\wereldbouwerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{527F55EB-59F0-4A52-B532-40970AC6E4FF}|WereldbouwerAPI\\WereldbouwerAPI.csproj|d:\\github folders\\wereldbouwerapi\\wereldbouwerapi\\controllers\\wereldbouwercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{527F55EB-59F0-4A52-B532-40970AC6E4FF}|WereldbouwerAPI\\WereldbouwerAPI.csproj|solutionrelative:wereldbouwerapi\\controllers\\wereldbouwercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{527F55EB-59F0-4A52-B532-40970AC6E4FF}|WereldbouwerAPI\\WereldbouwerAPI.csproj|d:\\github folders\\wereldbouwerapi\\wereldbouwerapi\\repositories\\iwereldbouwerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{527F55EB-59F0-4A52-B532-40970AC6E4FF}|WereldbouwerAPI\\WereldbouwerAPI.csproj|solutionrelative:wereldbouwerapi\\repositories\\iwereldbouwerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{527F55EB-59F0-4A52-B532-40970AC6E4FF}|WereldbouwerAPI\\WereldbouwerAPI.csproj|d:\\github folders\\wereldbouwerapi\\wereldbouwerapi\\services\\aspnetidentityauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{527F55EB-59F0-4A52-B532-40970AC6E4FF}|WereldbouwerAPI\\WereldbouwerAPI.csproj|solutionrelative:wereldbouwerapi\\services\\aspnetidentityauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C5144CA-EFE3-456B-AE55-D6EBAA0D39D0}|WereldBouwerTests\\WereldBouwerTests.csproj|d:\\github folders\\wereldbouwerapi\\wereldbouwertests\\wereldbouwercontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C5144CA-EFE3-456B-AE55-D6EBAA0D39D0}|WereldBouwerTests\\WereldBouwerTests.csproj|solutionrelative:wereldbouwertests\\wereldbouwercontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{527F55EB-59F0-4A52-B532-40970AC6E4FF}|WereldbouwerAPI\\WereldbouwerAPI.csproj|d:\\github folders\\wereldbouwerapi\\wereldbouwerapi\\controllers\\object2dcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{527F55EB-59F0-4A52-B532-40970AC6E4FF}|WereldbouwerAPI\\WereldbouwerAPI.csproj|solutionrelative:wereldbouwerapi\\controllers\\object2dcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\WereldbouwerAPI\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WereldbouwerAPI\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TingK\\AppData\\Roaming\\Microsoft\\UserSecrets\\af0547f5-a009-4971-8fe7-48da05150231\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C5144CA-EFE3-456B-AE55-D6EBAA0D39D0}|WereldBouwerTests\\WereldBouwerTests.csproj|d:\\github folders\\wereldbouwerapi\\wereldbouwertests\\object2dcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C5144CA-EFE3-456B-AE55-D6EBAA0D39D0}|WereldBouwerTests\\WereldBouwerTests.csproj|solutionrelative:wereldbouwertests\\object2dcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C5144CA-EFE3-456B-AE55-D6EBAA0D39D0}|WereldBouwerTests\\WereldBouwerTests.csproj|d:\\github folders\\wereldbouwerapi\\wereldbouwertests\\wereldbouwertests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{3C5144CA-EFE3-456B-AE55-D6EBAA0D39D0}|WereldBouwerTests\\WereldBouwerTests.csproj|solutionrelative:wereldbouwertests\\wereldbouwertests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{527F55EB-59F0-4A52-B532-40970AC6E4FF}|WereldbouwerAPI\\WereldbouwerAPI.csproj|d:\\github folders\\wereldbouwerapi\\wereldbouwerapi\\repositories\\object2drepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{527F55EB-59F0-4A52-B532-40970AC6E4FF}|WereldbouwerAPI\\WereldbouwerAPI.csproj|solutionrelative:wereldbouwerapi\\repositories\\object2drepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{527F55EB-59F0-4A52-B532-40970AC6E4FF}|WereldbouwerAPI\\WereldbouwerAPI.csproj|d:\\github folders\\wereldbouwerapi\\wereldbouwerapi\\object2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{527F55EB-59F0-4A52-B532-40970AC6E4FF}|WereldbouwerAPI\\WereldbouwerAPI.csproj|solutionrelative:wereldbouwerapi\\object2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{527F55EB-59F0-4A52-B532-40970AC6E4FF}|WereldbouwerAPI\\WereldbouwerAPI.csproj|d:\\github folders\\wereldbouwerapi\\wereldbouwerapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{527F55EB-59F0-4A52-B532-40970AC6E4FF}|WereldbouwerAPI\\WereldbouwerAPI.csproj|solutionrelative:wereldbouwerapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{527F55EB-59F0-4A52-B532-40970AC6E4FF}|WereldbouwerAPI\\WereldbouwerAPI.csproj|d:\\github folders\\wereldbouwerapi\\wereldbouwerapi\\wereldbouwer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{527F55EB-59F0-4A52-B532-40970AC6E4FF}|WereldbouwerAPI\\WereldbouwerAPI.csproj|solutionrelative:wereldbouwerapi\\wereldbouwer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Github folders\\WereldbouwerAPI\\.github\\workflows\\github_workflow_simplified.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\.github\\workflows\\github_workflow_simplified.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.github\\workflows\\github_workflow_simplified.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{527F55EB-59F0-4A52-B532-40970AC6E4FF}|WereldbouwerAPI\\WereldbouwerAPI.csproj|d:\\github folders\\wereldbouwerapi\\wereldbouwerapi\\wereldbouwerapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{527F55EB-59F0-4A52-B532-40970AC6E4FF}|WereldbouwerAPI\\WereldbouwerAPI.csproj|solutionrelative:wereldbouwerapi\\wereldbouwerapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\WereldbouwerAPI\\Repositories\\WereldBouwerRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WereldbouwerAPI\\Repositories\\WereldBouwerRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{527F55EB-59F0-4A52-B532-40970AC6E4FF}|WereldbouwerAPI\\WereldbouwerAPI.csproj|d:\\github folders\\wereldbouwerapi\\wereldbouwerapi\\services\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{527F55EB-59F0-4A52-B532-40970AC6E4FF}|WereldbouwerAPI\\WereldbouwerAPI.csproj|solutionrelative:wereldbouwerapi\\services\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\WereldbouwerAPI\\Services\\IAuthenticationService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WereldbouwerAPI\\Services\\IAuthenticationService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\WereldbouwerAPI\\Repositories\\Object2dRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WereldbouwerAPI\\Repositories\\Object2dRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\WereldbouwerAPI\\Controllers\\WereldBouwerController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WereldbouwerAPI\\Controllers\\WereldBouwerController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\WereldbouwerAPI\\Repositories\\IWereldBouwerRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WereldbouwerAPI\\Repositories\\IWereldBouwerRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\WereldbouwerAPI\\Services\\AspNetIdentityAuthenticationService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WereldbouwerAPI\\Services\\AspNetIdentityAuthenticationService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\WereldBouwerTests\\WereldBouwerControllerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WereldBouwerTests\\WereldBouwerControllerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\WereldbouwerAPI\\Object2D.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WereldbouwerAPI\\Object2D.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\WereldbouwerAPI\\Controllers\\Object2dController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WereldbouwerAPI\\Controllers\\Object2dController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\WereldBouwerTests\\Object2DControllerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WereldBouwerTests\\Object2DControllerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\WereldBouwerTests\\WereldBouwerTests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WereldBouwerTests\\WereldBouwerTests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\WereldbouwerAPI\\WereldbouwerAPI.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WereldbouwerAPI\\WereldbouwerAPI.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\WereldbouwerAPI\\WereldBouwer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WereldbouwerAPI\\WereldBouwer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -73,7 +73,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -97,99 +97,120 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Object2dRepository.cs",
-              "DocumentMoniker": "D:\\Github folders\\WereldbouwerAPI\\WereldbouwerAPI\\Repositories\\Object2dRepository.cs",
-              "RelativeDocumentMoniker": "WereldbouwerAPI\\Repositories\\Object2dRepository.cs",
-              "ToolTip": "D:\\Github folders\\WereldbouwerAPI\\WereldbouwerAPI\\Repositories\\Object2dRepository.cs",
-              "RelativeToolTip": "WereldbouwerAPI\\Repositories\\Object2dRepository.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAawB8AAAAQAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "WereldBouwerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\WereldbouwerAPI\\Repositories\\WereldBouwerRepository.cs",
+              "RelativeDocumentMoniker": "WereldbouwerAPI\\Repositories\\WereldBouwerRepository.cs",
+              "ToolTip": "C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\WereldbouwerAPI\\Repositories\\WereldBouwerRepository.cs",
+              "RelativeToolTip": "WereldbouwerAPI\\Repositories\\WereldBouwerRepository.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAawE0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T13:25:04.803Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "WereldBouwerController.cs",
-              "DocumentMoniker": "D:\\Github folders\\WereldbouwerAPI\\WereldbouwerAPI\\Controllers\\WereldBouwerController.cs",
-              "RelativeDocumentMoniker": "WereldbouwerAPI\\Controllers\\WereldBouwerController.cs",
-              "ToolTip": "D:\\Github folders\\WereldbouwerAPI\\WereldbouwerAPI\\Controllers\\WereldBouwerController.cs",
-              "RelativeToolTip": "WereldbouwerAPI\\Controllers\\WereldBouwerController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T09:49:53.007Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IWereldBouwerRepository.cs",
-              "DocumentMoniker": "D:\\Github folders\\WereldbouwerAPI\\WereldbouwerAPI\\Repositories\\IWereldBouwerRepository.cs",
-              "RelativeDocumentMoniker": "WereldbouwerAPI\\Repositories\\IWereldBouwerRepository.cs",
-              "ToolTip": "D:\\Github folders\\WereldbouwerAPI\\WereldbouwerAPI\\Repositories\\IWereldBouwerRepository.cs",
-              "RelativeToolTip": "WereldbouwerAPI\\Repositories\\IWereldBouwerRepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAuwAcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T13:32:50.722Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-14T10:08:31.809Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "WereldBouwerRepository.cs",
-              "DocumentMoniker": "D:\\Github folders\\WereldbouwerAPI\\WereldbouwerAPI\\Repositories\\WereldBouwerRepository.cs",
-              "RelativeDocumentMoniker": "WereldbouwerAPI\\Repositories\\WereldBouwerRepository.cs",
-              "ToolTip": "D:\\Github folders\\WereldbouwerAPI\\WereldbouwerAPI\\Repositories\\WereldBouwerRepository.cs",
-              "RelativeToolTip": "WereldbouwerAPI\\Repositories\\WereldBouwerRepository.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAtwEYAAAAQAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\WereldbouwerAPI\\Program.cs",
+              "RelativeDocumentMoniker": "WereldbouwerAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\WereldbouwerAPI\\Program.cs",
+              "RelativeToolTip": "WereldbouwerAPI\\Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAIwCMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T10:08:31.809Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AspNetIdentityAuthenticationService.cs",
-              "DocumentMoniker": "D:\\Github folders\\WereldbouwerAPI\\WereldbouwerAPI\\Services\\AspNetIdentityAuthenticationService.cs",
-              "RelativeDocumentMoniker": "WereldbouwerAPI\\Services\\AspNetIdentityAuthenticationService.cs",
-              "ToolTip": "D:\\Github folders\\WereldbouwerAPI\\WereldbouwerAPI\\Services\\AspNetIdentityAuthenticationService.cs",
-              "RelativeToolTip": "WereldbouwerAPI\\Services\\AspNetIdentityAuthenticationService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T10:36:33.808Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "secrets.json",
-              "DocumentMoniker": "C:\\Users\\TingK\\AppData\\Roaming\\Microsoft\\UserSecrets\\af0547f5-a009-4971-8fe7-48da05150231\\secrets.json",
-              "ToolTip": "C:\\Users\\TingK\\AppData\\Roaming\\Microsoft\\UserSecrets\\af0547f5-a009-4971-8fe7-48da05150231\\secrets.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-04T15:23:34.639Z",
+              "WhenOpened": "2025-03-10T13:27:13.612Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "IAuthenticationService.cs",
+              "DocumentMoniker": "C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\WereldbouwerAPI\\Services\\IAuthenticationService.cs",
+              "RelativeDocumentMoniker": "WereldbouwerAPI\\Services\\IAuthenticationService.cs",
+              "ToolTip": "C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\WereldbouwerAPI\\Services\\IAuthenticationService.cs",
+              "RelativeToolTip": "WereldbouwerAPI\\Services\\IAuthenticationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T10:35:42.11Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Object2dRepository.cs",
+              "DocumentMoniker": "C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\WereldbouwerAPI\\Repositories\\Object2dRepository.cs",
+              "RelativeDocumentMoniker": "WereldbouwerAPI\\Repositories\\Object2dRepository.cs",
+              "ToolTip": "C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\WereldbouwerAPI\\Repositories\\Object2dRepository.cs",
+              "RelativeToolTip": "WereldbouwerAPI\\Repositories\\Object2dRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAArwBkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T13:25:04.803Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WereldBouwerController.cs",
+              "DocumentMoniker": "C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\WereldbouwerAPI\\Controllers\\WereldBouwerController.cs",
+              "RelativeDocumentMoniker": "WereldbouwerAPI\\Controllers\\WereldBouwerController.cs",
+              "ToolTip": "C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\WereldbouwerAPI\\Controllers\\WereldBouwerController.cs",
+              "RelativeToolTip": "WereldbouwerAPI\\Controllers\\WereldBouwerController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T09:49:53.007Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IWereldBouwerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\WereldbouwerAPI\\Repositories\\IWereldBouwerRepository.cs",
+              "RelativeDocumentMoniker": "WereldbouwerAPI\\Repositories\\IWereldBouwerRepository.cs",
+              "ToolTip": "C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\WereldbouwerAPI\\Repositories\\IWereldBouwerRepository.cs",
+              "RelativeToolTip": "WereldbouwerAPI\\Repositories\\IWereldBouwerRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T13:32:50.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AspNetIdentityAuthenticationService.cs",
+              "DocumentMoniker": "C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\WereldbouwerAPI\\Services\\AspNetIdentityAuthenticationService.cs",
+              "RelativeDocumentMoniker": "WereldbouwerAPI\\Services\\AspNetIdentityAuthenticationService.cs",
+              "ToolTip": "C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\WereldbouwerAPI\\Services\\AspNetIdentityAuthenticationService.cs",
+              "RelativeToolTip": "WereldbouwerAPI\\Services\\AspNetIdentityAuthenticationService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T10:36:33.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "secrets.json",
+              "DocumentMoniker": "C:\\Users\\TingK\\AppData\\Roaming\\Microsoft\\UserSecrets\\af0547f5-a009-4971-8fe7-48da05150231\\secrets.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\TingK\\AppData\\Roaming\\Microsoft\\UserSecrets\\af0547f5-a009-4971-8fe7-48da05150231\\secrets.json",
+              "ToolTip": "C:\\Users\\TingK\\AppData\\Roaming\\Microsoft\\UserSecrets\\af0547f5-a009-4971-8fe7-48da05150231\\secrets.json",
+              "RelativeToolTip": "..\\..\\..\\..\\TingK\\AppData\\Roaming\\Microsoft\\UserSecrets\\af0547f5-a009-4971-8fe7-48da05150231\\secrets.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-04T15:23:34.639Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "WereldBouwerControllerTests.cs",
-              "DocumentMoniker": "D:\\Github folders\\WereldbouwerAPI\\WereldBouwerTests\\WereldBouwerControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\WereldBouwerTests\\WereldBouwerControllerTests.cs",
               "RelativeDocumentMoniker": "WereldBouwerTests\\WereldBouwerControllerTests.cs",
-              "ToolTip": "D:\\Github folders\\WereldbouwerAPI\\WereldBouwerTests\\WereldBouwerControllerTests.cs",
+              "ToolTip": "C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\WereldBouwerTests\\WereldBouwerControllerTests.cs",
               "RelativeToolTip": "WereldBouwerTests\\WereldBouwerControllerTests.cs",
               "ViewState": "AgIAAC4AAAAAAAAAAAAQwA4AAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T12:16:28.994Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T12:16:28.994Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "Object2D.cs",
-              "DocumentMoniker": "D:\\Github folders\\WereldbouwerAPI\\WereldbouwerAPI\\Object2D.cs",
+              "DocumentMoniker": "C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\WereldbouwerAPI\\Object2D.cs",
               "RelativeDocumentMoniker": "WereldbouwerAPI\\Object2D.cs",
-              "ToolTip": "D:\\Github folders\\WereldbouwerAPI\\WereldbouwerAPI\\Object2D.cs",
+              "ToolTip": "C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\WereldbouwerAPI\\Object2D.cs",
               "RelativeToolTip": "WereldbouwerAPI\\Object2D.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -197,36 +218,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "Object2dController.cs",
-              "DocumentMoniker": "D:\\Github folders\\WereldbouwerAPI\\WereldbouwerAPI\\Controllers\\Object2dController.cs",
+              "DocumentMoniker": "C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\WereldbouwerAPI\\Controllers\\Object2dController.cs",
               "RelativeDocumentMoniker": "WereldbouwerAPI\\Controllers\\Object2dController.cs",
-              "ToolTip": "D:\\Github folders\\WereldbouwerAPI\\WereldbouwerAPI\\Controllers\\Object2dController.cs",
+              "ToolTip": "C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\WereldbouwerAPI\\Controllers\\Object2dController.cs",
               "RelativeToolTip": "WereldbouwerAPI\\Controllers\\Object2dController.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAcwEgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T13:22:46.906Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T13:22:46.906Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Github folders\\WereldbouwerAPI\\WereldbouwerAPI\\Program.cs",
-              "RelativeDocumentMoniker": "WereldbouwerAPI\\Program.cs",
-              "ToolTip": "D:\\Github folders\\WereldbouwerAPI\\WereldbouwerAPI\\Program.cs",
-              "RelativeToolTip": "WereldbouwerAPI\\Program.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAADAAAAB5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T13:27:13.612Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "Object2DControllerTests.cs",
-              "DocumentMoniker": "D:\\Github folders\\WereldbouwerAPI\\WereldBouwerTests\\Object2DControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\WereldBouwerTests\\Object2DControllerTests.cs",
               "RelativeDocumentMoniker": "WereldBouwerTests\\Object2DControllerTests.cs",
-              "ToolTip": "D:\\Github folders\\WereldbouwerAPI\\WereldBouwerTests\\Object2DControllerTests.cs",
+              "ToolTip": "C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\WereldBouwerTests\\Object2DControllerTests.cs",
               "RelativeToolTip": "WereldBouwerTests\\Object2DControllerTests.cs",
               "ViewState": "AgIAAEkAAAAAAAAAAAAkwHwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -234,11 +242,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "WereldBouwerTests.csproj",
-              "DocumentMoniker": "D:\\Github folders\\WereldbouwerAPI\\WereldBouwerTests\\WereldBouwerTests.csproj",
+              "DocumentMoniker": "C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\WereldBouwerTests\\WereldBouwerTests.csproj",
               "RelativeDocumentMoniker": "WereldBouwerTests\\WereldBouwerTests.csproj",
-              "ToolTip": "D:\\Github folders\\WereldbouwerAPI\\WereldBouwerTests\\WereldBouwerTests.csproj",
+              "ToolTip": "C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\WereldBouwerTests\\WereldBouwerTests.csproj",
               "RelativeToolTip": "WereldBouwerTests\\WereldBouwerTests.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -246,23 +254,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "IAuthenticationService.cs",
-              "DocumentMoniker": "D:\\Github folders\\WereldbouwerAPI\\WereldbouwerAPI\\Services\\IAuthenticationService.cs",
-              "RelativeDocumentMoniker": "WereldbouwerAPI\\Services\\IAuthenticationService.cs",
-              "ToolTip": "D:\\Github folders\\WereldbouwerAPI\\WereldbouwerAPI\\Services\\IAuthenticationService.cs",
-              "RelativeToolTip": "WereldbouwerAPI\\Services\\IAuthenticationService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T10:35:42.11Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 14,
               "Title": "WereldbouwerAPI.csproj",
-              "DocumentMoniker": "D:\\Github folders\\WereldbouwerAPI\\WereldbouwerAPI\\WereldbouwerAPI.csproj",
+              "DocumentMoniker": "C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\WereldbouwerAPI\\WereldbouwerAPI.csproj",
               "RelativeDocumentMoniker": "WereldbouwerAPI\\WereldbouwerAPI.csproj",
-              "ToolTip": "D:\\Github folders\\WereldbouwerAPI\\WereldbouwerAPI\\WereldbouwerAPI.csproj",
+              "ToolTip": "C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\WereldbouwerAPI\\WereldbouwerAPI.csproj",
               "RelativeToolTip": "WereldbouwerAPI\\WereldbouwerAPI.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -270,11 +266,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 2,
               "Title": "github_workflow_simplified.yml",
-              "DocumentMoniker": "D:\\Github folders\\WereldbouwerAPI\\.github\\workflows\\github_workflow_simplified.yml",
+              "DocumentMoniker": "C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\.github\\workflows\\github_workflow_simplified.yml",
               "RelativeDocumentMoniker": ".github\\workflows\\github_workflow_simplified.yml",
-              "ToolTip": "D:\\Github folders\\WereldbouwerAPI\\.github\\workflows\\github_workflow_simplified.yml",
+              "ToolTip": "C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\.github\\workflows\\github_workflow_simplified.yml",
               "RelativeToolTip": ".github\\workflows\\github_workflow_simplified.yml",
               "ViewState": "AgIAAEIAAAAAAAAAAAAgwFEAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
@@ -282,11 +278,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "WereldBouwer.cs",
-              "DocumentMoniker": "D:\\Github folders\\WereldbouwerAPI\\WereldbouwerAPI\\WereldBouwer.cs",
+              "DocumentMoniker": "C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\WereldbouwerAPI\\WereldBouwer.cs",
               "RelativeDocumentMoniker": "WereldbouwerAPI\\WereldBouwer.cs",
-              "ToolTip": "D:\\Github folders\\WereldbouwerAPI\\WereldbouwerAPI\\WereldBouwer.cs",
+              "ToolTip": "C:\\Users\\effeg\\source\\repos\\WereldbouwerAPI\\WereldbouwerAPI\\WereldBouwer.cs",
               "RelativeToolTip": "WereldbouwerAPI\\WereldBouwer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
